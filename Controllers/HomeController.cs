@@ -34,7 +34,7 @@ namespace new_world_31.Controllers
             };
 
             var json = JsonConvert.SerializeObject(user, Formatting.Indented);
-
+            _logger.LogInformation(json);
             return json;
         }
 
